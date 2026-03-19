@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>Free Birthday Wish Maker Online | Create Birthday Posters & Wishes</title>
+    
+<meta name="description" content="Create free birthday wishes online. Make birthday posters, photo memories, and share them instantly with a special link. Best birthday wish maker tool.">    
+<meta name="keywords" content="birthday wishes, birthday poster maker, online greeting card, birthday website, AI birthday message, free birthday maker">
+<meta property="og:title" content="WishBloom 🎂 - Create Magical Birthday Wishes">
+<meta property="og:description" content="Create birthday wishes, posters, and share them with a beautiful link.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://birthday-wishmaker.netlify.app/">
+<meta property="og:image" content="https://birthday-wishmaker.netlify.app/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="google-site-verification" content="Do6cP_ci3iGIeBAt_XtzNuf0aN046g8OKEFrb2HSHbM">
+  
+    
+<link rel="stylesheet" href="style.css">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;600;700;800;900&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Confetti Container -->
+<div id="confetti-container"></div>
+<!-- Balloons Container -->
+<div id="balloons-container"></div>
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav class="navbar">
+  <div class="nav-brand">🎂 WishBloom</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#create">Create Wish</a></li>
+    <li><a href="#poster">Poster Maker</a></li>
+    <li><a href="#group">Group Wish</a></li>
+  </ul>
+  <button class="nav-cta" onclick="scrollToSection('create')">✨ Create Now</button>
+  <button class="hamburger" id="hamburger">☰</button>
+</nav>
+
+<!-- ==================== LANDING PAGE ==================== -->
+<section id="home" class="hero-section">
+  <div class="hero-bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">🎉 Birthday Magic Awaits</div>
+    <h1 class="hero-title">Create <span class="gradient-text">Magical</span><br>Birthday Wishes<br>in Seconds!</h1>
+    <p class="hero-subtitle">Design beautiful wish pages, posters, and share unforgettable moments with your loved ones 🎈</p>
+    <div class="hero-buttons">
+      <button class="btn-primary" onclick="scrollToSection('create')">🎁 Create a Birthday Wish</button>
+      <button class="btn-secondary" onclick="scrollToSection('poster')">🖼️ Make a Poster</button>
+      <button class="btn-secondary" onclick="startConfetti()">🎊 Celebrate</button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">50K+</span><span>Wishes Created</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">120+</span><span>Countries</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">4.9★</span><span>Rating</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="wish-card-preview">
+      <div class="preview-header">🎂 Happy Birthday!</div>
+      <div class="preview-name">Sarah</div>
+      <div class="preview-msg">"Wishing you a day as radiant as your smile!"</div>
+      <div class="preview-confetti">🎊🎈🎁🎉✨</div>
+      <div class="preview-balloons">
+        <span class="mini-balloon b1">🎈</span>
+        <span class="mini-balloon b2">🎈</span>
+        <span class="mini-balloon b3">🎈</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section" id="features">
+  <h2 class="section-title">Everything You Need to <span class="gradient-text">Celebrate</span> 🥳</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🎨</div>
+      <h3>Beautiful Posters</h3>
+      <p>Design stunning birthday posters with custom fonts, colors, and stickers</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔗</div>
+      <h3>Share via Link</h3>
+      <p>Generate a unique link and share your wish with anyone, anywhere</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🤖</div>
+      <h3>AI Wish Generator</h3>
+      <p>Can't find words? Let our AI craft the perfect heartfelt message</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">👥</div>
+      <h3>Group Wishes</h3>
+      <p>Invite friends to add their own messages to one special wish page</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎵</div>
+      <h3>Music & Media</h3>
+      <p>Add photos, videos, and background music to make it unforgettable</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎁</div>
+      <h3>Gift Reveal</h3>
+      <p>Surprise with a dramatic gift box animation that reveals your message</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CREATE WISH SECTION ==================== -->
+<section id="create" class="create-section">
+  <div class="section-header">
+    <h2 class="section-title">Create Your <span class="gradient-text">Birthday Wish</span> 🎂</h2>
+    <p>Fill in the details and we'll craft something magical</p>
+  </div>
+
+  <div class="create-container">
+    <form id="wishForm" class="wish-form">
+      <div class="form-grid">
+        <div class="form-group">
+          <label>🎂 Recipient's Name</label>
+          <input type="text" id="recipientName" placeholder="e.g. Sarah Johnson" />
+          <span class="form-error" id="err-recipient"></span>
+        </div>
+        <div class="form-group">
+          <label>💌 Your Name (Sender)</label>
+          <input type="text" id="senderName" placeholder="e.g. Mom & Dad" />
+          <span class="form-error" id="err-sender"></span>
+        </div>
+      </div>
+
+      <div class="form-group full">
+        <label>✍️ Birthday Message</label>
+        <textarea id="wishMessage" rows="4" placeholder="Write your heartfelt message here..."></textarea>
+        <span class="form-error" id="err-message"></span>
+      </div>
+
+      <div class="form-group">
+        <label>📅 Birthday Date</label>
+        <input type="date" id="birthdayDate" />
+      </div>
+
+      <div class="form-group">
+        <label>🖼️ Upload Photos</label>
+        <div class="upload-zone" id="photoUploadZone">
+          <input type="file" id="photoUpload" accept="image/*" multiple hidden />
+          <div class="upload-placeholder" onclick="document.getElementById('photoUpload').click()">
+            <span class="upload-icon">📸</span>
+            <p>Click to upload photos</p>
+            <small>PNG, JPG up to 10MB each</small>
+          </div>
+          <div id="photoPreviewGrid" class="photo-preview-grid"></div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>🎬 Video or Voice Message</label>
+        <div class="upload-zone small">
+          <input type="file" id="videoUpload" accept="video/*,audio/*" hidden />
+          <div class="upload-placeholder" onclick="document.getElementById('videoUpload').click()">
+            <span class="upload-icon">🎥</span>
+            <p>Upload video or voice</p>
+          </div>
+          <div id="videoPreview"></div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>🎵 Background Music</label>
+        <div class="upload-zone small">
+          <input type="file" id="musicUpload" accept="audio/*" hidden />
+          <div class="upload-placeholder" onclick="document.getElementById('musicUpload').click()">
+            <span class="upload-icon">🎶</span>
+            <p>Upload background music</p>
+          </div>
+          <div id="musicPreview"></div>
+        </div>
+      </div>
+
+      <div class="form-group full">
+        <label class="toggle-label">
+          <input type="checkbox" id="giftReveal" class="toggle-input" />
+          <span class="toggle-switch"></span>
+          🎁 Enable Gift Reveal Animation
+        </label>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" class="btn-ai" onclick="generateAIWish()">🤖 Generate AI Wish</button>
+        <button type="submit" class="btn-primary large" onclick="startConfetti()">✨ Generate Wish Page</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ==================== BIRTHDAY WISH DISPLAY PAGE ==================== -->
+<section id="wishDisplay" class="wish-display-section" style="display:none;">
+  <div class="wish-display-inner">
+
+    <!-- Share Link Banner -->
+    <div class="share-banner">
+      <span>🔗 Your unique wish link:</span>
+      <div class="link-box">
+        <input type="text" id="generatedLink" readonly />
+        <button class="btn-copy" onclick="copyLink()">📋 Copy</button>
+      </div>
+    </div>
+
+    <!-- Wish Hero -->
+    <div class="wish-hero" id="wishHero">
+      <div class="wish-title-area">
+        <div class="wish-from-badge" id="displayFrom">From: ...</div>
+        <h1 class="wish-big-title">Happy Birthday,</h1>
+        <h2 class="wish-name-display" id="displayName">...</h2>
+        <div class="wish-sparkles">✨🎊✨</div>
+      </div>
+    </div>
+
+    <!-- Countdown -->
+    <div class="countdown-box" id="countdownBox">
+      <h3>🎂 Time Until the Big Day!</h3>
+      <div class="countdown-timer" id="countdownTimer">
+        <div class="cd-unit"><span id="cdDays">00</span><small>Days</small></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><span id="cdHours">00</span><small>Hours</small></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><span id="cdMins">00</span><small>Mins</small></div>
+        <div class="cd-sep">:</div>
+        <div class="cd-unit"><span id="cdSecs">00</span><small>Secs</small></div>
+      </div>
+    </div>
+
+    <!-- Gift Box -->
+    <div class="gift-box-section" id="giftBoxSection" style="display:none;">
+      <div class="gift-box" id="giftBox" onclick="revealGift()">
+        <div class="gift-lid" id="giftLid">🎁</div>
+        <div class="gift-message" id="giftMessage" style="display:none;"></div>
+      </div>
+      <p class="gift-hint">👆 Click to reveal your gift!</p>
+    </div>
+
+    <!-- Wish Message -->
+    <div class="wish-message-card" id="wishMessageCard">
+      <div class="message-quote">"</div>
+      <p id="displayMessage">...</p>
+      <div class="message-quote closing">"</div>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="gallery-section" id="gallerySection" style="display:none;">
+      <h3>📸 Our Moments</h3>
+      <div class="gallery-slider" id="gallerySlider">
+        <button class="gallery-btn prev" onclick="slideGallery(-1)">‹</button>
+        <div class="gallery-track" id="galleryTrack"></div>
+        <button class="gallery-btn next" onclick="slideGallery(1)">›</button>
+      </div>
+      <div class="gallery-dots" id="galleryDots"></div>
+    </div>
+
+    <!-- Video Player -->
+    <div class="video-section" id="videoSection" style="display:none;">
+      <h3>🎬 Special Video</h3>
+      <video id="wishVideo" controls class="wish-video"></video>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer" style="display:none;">
+      <div class="music-info">
+        <span class="music-note">🎵</span>
+        <span>Background Music</span>
+      </div>
+      <audio id="wishMusic" loop></audio>
+      <button class="music-toggle" id="musicToggle" onclick="toggleMusic()">▶ Play Music</button>
+    </div>
+
+    <!-- Group Wishes & Comments -->
+    <div class="group-wish-display" id="groupWishDisplay">
+      <h3>💌 Wishes from Friends</h3>
+      <div id="wishMessagesList" class="wishes-list"></div>
+    </div>
+
+    <!-- Add Comment Box -->
+    <div class="add-wish-box">
+      <h3>✍️ Add Your Wish</h3>
+      <div class="add-wish-form">
+        <input type="text" id="commenterName" placeholder="Your name" />
+        <textarea id="commenterMessage" placeholder="Write your birthday wish..." rows="3"></textarea>
+        <button class="btn-primary" onclick="addGroupWish()">💌 Send Wish</button>
+      </div>
+    </div>
+
+    <button class="btn-back" onclick="goBackToCreate()">← Create Another Wish</button>
+  </div>
+</section>
+
+<!-- ==================== POSTER MAKER ==================== -->
+<section id="poster" class="poster-section">
+  <div class="section-header">
+    <h2 class="section-title">🖼️ Birthday <span class="gradient-text">Poster Maker</span></h2>
+    <p>Design a stunning poster and download it instantly</p>
+  </div>
+
+  <div class="poster-workspace">
+    <!-- Controls -->
+    <div class="poster-controls">
+      <div class="form-group">
+        <label>🎂 Birthday Person's Name</label>
+        <input type="text" id="posterName" value="Sarah" oninput="updatePoster()" placeholder="Name"/>
+      </div>
+      <div class="form-group">
+        <label>💌 From</label>
+        <input type="text" id="posterFrom" value="Your Friends" oninput="updatePoster()" placeholder="From"/>
+      </div>
+      <div class="form-group">
+        <label>✍️ Message</label>
+        <textarea id="posterMessage" rows="3" oninput="updatePoster()" placeholder="Birthday message...">Wishing you a day filled with love, laughter, and all the joy you bring to others! 🎉</textarea>
+      </div>
+      <div class="form-group">
+        <label>📸 Upload Photo</label>
+        <input type="file" id="posterPhoto" accept="image/*" onchange="updatePosterPhoto()" />
+      </div>
+      <div class="form-group">
+        <label>🎨 Background Theme</label>
+        <div class="color-options" id="bgOptions">
+          <div class="color-swatch active" style="background: linear-gradient(135deg,#ff6b9d,#c44dff,#ffb347)" data-bg="sunset" onclick="setPosterBg(this,'sunset')"></div>
+          <div class="color-swatch" style="background: linear-gradient(135deg,#667eea,#764ba2)" data-bg="purple" onclick="setPosterBg(this,'purple')"></div>
+          <div class="color-swatch" style="background: linear-gradient(135deg,#f093fb,#f5576c)" data-bg="pink" onclick="setPosterBg(this,'pink')"></div>
+          <div class="color-swatch" style="background: linear-gradient(135deg,#4facfe,#00f2fe)" data-bg="blue" onclick="setPosterBg(this,'blue')"></div>
+          <div class="color-swatch" style="background: linear-gradient(135deg,#43e97b,#38f9d7)" data-bg="green" onclick="setPosterBg(this,'green')"></div>
+          <div class="color-swatch" style="background: linear-gradient(135deg,#fa709a,#fee140)" data-bg="gold" onclick="setPosterBg(this,'gold')"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>🔤 Font Style</label>
+        <select id="posterFont" onchange="updatePoster()">
+          <option value="Pacifico">Pacifico (Playful)</option>
+          <option value="Dancing Script">Dancing Script (Elegant)</option>
+          <option value="Nunito">Nunito (Modern)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>🎪 Stickers</label>
+        <div class="sticker-grid">
+          <span class="sticker" onclick="addSticker(this)">🎂</span>
+          <span class="sticker" onclick="addSticker(this)">🎈</span>
+          <span class="sticker" onclick="addSticker(this)">🎉</span>
+          <span class="sticker" onclick="addSticker(this)">🎁</span>
+          <span class="sticker" onclick="addSticker(this)">🌟</span>
+          <span class="sticker" onclick="addSticker(this)">💖</span>
+          <span class="sticker" onclick="addSticker(this)">🦋</span>
+          <span class="sticker" onclick="addSticker(this)">🌸</span>
+          <span class="sticker" onclick="addSticker(this)">🥳</span>
+          <span class="sticker" onclick="addSticker(this)">✨</span>
+          <span class="sticker" onclick="addSticker(this)">🌈</span>
+          <span class="sticker" onclick="addSticker(this)">🍰</span>
+        </div>
+      </div>
+      <button class="btn-primary large full-width" onclick="downloadPoster(); startConfetti();">⬇️ Download Poster</button>
+    </div>
+
+    <!-- Poster Preview -->
+    <div class="poster-preview-area">
+      <div class="poster-preview" id="posterPreview">
+        <div class="poster-stickers-layer" id="posterStickersLayer"></div>
+        <div class="poster-photo-area" id="posterPhotoArea">
+          <div class="poster-photo-placeholder" id="posterPhotoPlaceholder">📸</div>
+          <img id="posterPhotoImg" style="display:none;" />
+        </div>
+        <div class="poster-text-area">
+          <div class="poster-happy">Happy Birthday!</div>
+          <div class="poster-person-name" id="posterDisplayName">Sarah</div>
+          <div class="poster-decorative-line">— ✦ —</div>
+          <div class="poster-msg" id="posterDisplayMsg">Wishing you a day filled with love, laughter, and all the joy you bring to others! 🎉</div>
+          <div class="poster-from" id="posterDisplayFrom">— Your Friends</div>
+        </div>
+        <div class="poster-decoration top-left">🎈</div>
+        <div class="poster-decoration top-right">🎊</div>
+        <div class="poster-decoration bot-left">🌟</div>
+        <div class="poster-decoration bot-right">🎂</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== GROUP WISH ==================== -->
+<section id="group" class="group-section">
+  <div class="section-header">
+    <h2 class="section-title">👥 Group <span class="gradient-text">Birthday Wishes</span></h2>
+    <p>Collect wishes from everyone who cares 💝</p>
+  </div>
+
+  <div class="group-container">
+    <div class="group-form-box">
+      <h3>Add Your Wish to the Board</h3>
+      <div class="form-group">
+        <label>👤 Your Name</label>
+        <input type="text" id="groupName" placeholder="Enter your name" />
+      </div>
+      <div class="form-group">
+        <label>💌 Your Wish</label>
+        <textarea id="groupMessage" rows="3" placeholder="Write your birthday wish..."></textarea>
+      </div>
+      <button class="btn-primary large" onclick="addToWishBoard()">🎉 Add to Wish Board</button>
+    </div>
+
+    <div class="wish-board" id="wishBoard">
+      <div class="wish-board-title">🎂 Wish Board</div>
+      <div id="wishBoardItems" class="wish-board-items">
+        <div class="wish-board-empty">Be the first to add a wish! 🌟</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <div class="footer-logo">🎂 WishBloom</div>
+      <p>Making every birthday unforgettable, one wish at a time.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#create">Create Wish</a>
+      <a href="#poster">Poster Maker</a>
+      <a href="#group">Group Wish</a>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#" class="social-btn">🐦 Twitter</a>
+        <a href="#" class="social-btn">📸 Instagram</a>
+        <a href="#" class="social-btn">📘 Facebook</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Made with 💖 by WishBloom · © 2025 All Rights Reserved</p>
+  </div>
+</footer>
+
+<!-- AI Wish Modal -->
+<div id="aiModal" class="modal-overlay" style="display:none;" onclick="closeAIModal(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeAIModal()">✕</button>
+    <div class="modal-icon">🤖</div>
+    <h3>AI-Generated Wish</h3>
+    <div class="ai-wish-text" id="aiWishText"></div>
+    <button class="btn-primary" onclick="useAIWish()">✅ Use This Wish</button>
+    <button class="btn-secondary" onclick="generateAIWish()">🔄 Generate Another</button>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
