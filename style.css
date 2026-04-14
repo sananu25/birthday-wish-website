@@ -18,7 +18,6 @@
   --glow-purple: 0 0 30px rgba(196,77,255,0.4);
 }
 
-/* ===== RESET & BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
