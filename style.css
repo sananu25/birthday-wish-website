@@ -44,7 +44,6 @@ body::before {
   z-index: -1;
 }
 
-/* ===== TYPOGRAPHY ===== */
 .gradient-text {
   background: linear-gradient(135deg, var(--pink), var(--yellow), var(--purple));
   -webkit-background-clip: text;
