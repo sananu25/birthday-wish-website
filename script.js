@@ -609,7 +609,6 @@ function addToWishBoard() {
   showToast('🎉 Wish added to the board!');
 }
 
-// ── AI Wish Generator ─────────────────────────────────────────
 const aiWishes = [
   "May your birthday be as bright and beautiful as the smile you share with the world every single day! Wishing you endless joy, laughter, and love! 🎉",
   "On this special day, may all your dreams take flight and the universe shower you with blessings beyond imagination. You deserve every bit of happiness! ✨",
