@@ -1,4 +1,3 @@
-// ===== WISHBLOOM — SCRIPT.JS =====
 
 const state = {
   photos: [],
