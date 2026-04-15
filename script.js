@@ -12,7 +12,6 @@ const state = {
   wishList: [],
 };
 
-// ── DOM Ready ─────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   initConfetti();
   initBalloons();
