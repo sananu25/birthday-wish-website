@@ -1,6 +1,5 @@
 // ===== WISHBLOOM — SCRIPT.JS =====
 
-// ── Global State ──────────────────────────────────────────────
 const state = {
   photos: [],
   videoFile: null,
