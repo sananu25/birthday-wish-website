@@ -82,7 +82,6 @@ function burstConfetti() {
 }
 
 
-// ── Balloons ──────────────────────────────────────────────────
 function initBalloons() {
   const container = document.getElementById('balloons-container');
   const balloonEmojis = ['🎈', '🎈', '🎈', '🎀'];
