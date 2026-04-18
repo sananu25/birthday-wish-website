@@ -150,7 +150,6 @@ function setupFormListeners() {
   document.getElementById('wishForm').addEventListener('submit', handleFormSubmit);
 }
 
-// ── Form Validation ───────────────────────────────────────────
 function validateForm() {
   let valid = true;
 
