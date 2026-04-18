@@ -122,7 +122,6 @@ function celebrateBirthday() {
 
   showToast("🎉 Let's Celebrate!");
 }
-// ── Scroll Animations ─────────────────────────────────────────
 function initScrollAnimations() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
