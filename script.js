@@ -44,7 +44,6 @@ function hamburgerMenu() {
   });
 }
 
-// ── Confetti ──────────────────────────────────────────────────
 function initConfetti() {
   const container = document.getElementById('confetti-container');
   const colors = ['#ff6b9d', '#c44dff', '#ffb347', '#4facfe', '#43e97b', '#fee140', '#f5576c', '#00f2fe'];
