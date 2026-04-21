@@ -30,7 +30,6 @@ body {
   min-height: 100vh;
 }
 
-/* Animated gradient background */
 body::before {
   content: '';
   position: fixed;
