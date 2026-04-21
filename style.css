@@ -347,7 +347,7 @@ section:first-of-type { padding-top: 0; }
 .stat span:last-child { font-size: 0.8rem; color: var(--text-muted); font-weight: 600; }
 .stat-divider { width: 1px; height: 40px; background: var(--card-border); }
 
-/* Hero Visual */
+
 .hero-visual { display: flex; justify-content: center; align-items: center; }
 
 .wish-card-preview {
