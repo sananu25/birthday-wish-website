@@ -79,7 +79,6 @@ body::before {
   100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
 }
 
-/* ===== BALLOONS ===== */
 #balloons-container {
   position: fixed;
   bottom: -100px;
