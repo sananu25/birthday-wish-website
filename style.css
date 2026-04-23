@@ -379,7 +379,6 @@ section:first-of-type { padding-top: 0; }
 .b3 { animation-delay: 1s; }
 @keyframes mini-sway { 0%,100% { transform: rotate(-8deg); } 50% { transform: rotate(8deg); } }
 
-/* ===== FEATURES SECTION ===== */
 .features-section { max-width: 1200px; margin: 0 auto; }
 
 .features-grid {
