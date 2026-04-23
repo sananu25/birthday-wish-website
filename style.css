@@ -101,7 +101,6 @@ body::before {
   100% { transform: translateY(-110vh) rotate(5deg); opacity: 0; }
 }
 
-/* ===== NAVBAR ===== */
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
