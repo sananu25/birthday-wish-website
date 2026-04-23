@@ -406,7 +406,6 @@ section:first-of-type { padding-top: 0; }
 .feature-card h3 { font-size: 1.15rem; font-weight: 800; margin-bottom: 0.5rem; }
 .feature-card p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
 
-/* ===== FORM STYLES ===== */
 .create-section { max-width: 900px; margin: 0 auto; }
 
 .wish-form {
