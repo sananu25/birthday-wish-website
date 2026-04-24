@@ -192,7 +192,6 @@ function handleFormSubmit(e) {
   showToast('🎉 Your wish page is ready! Share the link!');
 }
 
-// ── Build Wish Display Page ────────────────────────────────────
 function buildWishPage({ recipient, sender, message, date, giftEnabled }) {
   // Show the section
   document.getElementById('create').style.display = 'none';
