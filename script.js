@@ -327,7 +327,6 @@ function checkURLHash() {
   }
 }
 
-// ── Received-wish overlay (shown to the recipient) ─────────────
 function showReceivedWishOverlay(recipient, sender, onReveal) {
   // Build overlay
   const overlay = document.createElement('div');
