@@ -170,7 +170,7 @@ body::before {
   margin-left: auto;
 }
 
-/* ===== BUTTONS ===== */
+
 .btn-primary {
   background: linear-gradient(135deg, var(--pink), var(--purple));
   color: #fff;
