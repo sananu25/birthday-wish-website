@@ -461,7 +461,7 @@ section:first-of-type { padding-top: 0; }
 
 .form-error { color: #ff6b6b; font-size: 0.82rem; font-weight: 600; min-height: 1rem; }
 
-/* Upload Zones */
+
 .upload-zone {
   background: rgba(255,255,255,0.04);
   border: 2px dashed rgba(255,107,157,0.3);
