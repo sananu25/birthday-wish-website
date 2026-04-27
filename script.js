@@ -176,7 +176,6 @@ function validateForm() {
   return valid;
 }
 
-// ── Handle Form Submit ────────────────────────────────────────
 function handleFormSubmit(e) {
   e.preventDefault();
   if (!validateForm()) return;
