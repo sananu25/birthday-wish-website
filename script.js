@@ -136,7 +136,6 @@ function initScrollAnimations() {
   });
 }
 
-// ── Form Setup ────────────────────────────────────────────────
 function setupFormListeners() {
   // Photo upload
   document.getElementById('photoUpload').addEventListener('change', handlePhotoUpload);
