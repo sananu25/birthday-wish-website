@@ -108,7 +108,6 @@ function celebrateBirthday() {
 
     balloon.style.left = Math.random() * 100 + '%';
 
-    /* IMPORTANT FIX */
     balloon.style.animationDuration = (Math.random() * 5 + 5) + 's';
     balloon.style.animationIterationCount = "1";
 
