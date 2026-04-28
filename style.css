@@ -508,7 +508,6 @@ section:first-of-type { padding-top: 0; }
   object-fit: cover;
 }
 
-/* Toggle Switch */
 .toggle-label {
   display: flex;
   align-items: center;
