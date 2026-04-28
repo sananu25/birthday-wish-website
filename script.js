@@ -205,7 +205,6 @@ function buildWishPage({ recipient, sender, message, date, giftEnabled }) {
   const link = generateUniqueLink(recipient, sender);
   document.getElementById('generatedLink').value = link;
 
-  // Gift box
   if (giftEnabled) {
     document.getElementById('giftBoxSection').style.display = 'block';
     document.getElementById('giftMessage').textContent = message;
