@@ -141,7 +141,6 @@ function setupFormListeners() {
   document.getElementById('photoUpload').addEventListener('change', handlePhotoUpload);
   // Video upload
   document.getElementById('videoUpload').addEventListener('change', handleVideoUpload);
-  // Music upload
   document.getElementById('musicUpload').addEventListener('change', handleMusicUpload);
   // Form submit
   document.getElementById('wishForm').addEventListener('submit', handleFormSubmit);
