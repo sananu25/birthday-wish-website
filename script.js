@@ -137,7 +137,6 @@ function initScrollAnimations() {
 }
 
 function setupFormListeners() {
-  // Photo upload
   document.getElementById('photoUpload').addEventListener('change', handlePhotoUpload);
   // Video upload
   document.getElementById('videoUpload').addEventListener('change', handleVideoUpload);
