@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   hamburgerMenu();
 });
 
-// ── Navigation ────────────────────────────────────────────────
+
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
