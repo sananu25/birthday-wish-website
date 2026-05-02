@@ -226,7 +226,6 @@ function buildWishPage({ recipient, sender, message, date, giftEnabled }) {
     document.getElementById('gallerySection').style.display = 'none';
   }
 
-  // Video
   if (state.videoFile) {
     const video = document.getElementById('wishVideo');
     video.src = URL.createObjectURL(state.videoFile);
