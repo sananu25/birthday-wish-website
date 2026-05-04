@@ -208,7 +208,6 @@ function buildWishPage({ recipient, sender, message, date, giftEnabled }) {
     document.getElementById('giftBoxSection').style.display = 'none';
   }
 
-  // Countdown
   if (date) {
     startCountdown(date);
     document.getElementById('countdownBox').style.display = 'block';
