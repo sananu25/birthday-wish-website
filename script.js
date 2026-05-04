@@ -186,7 +186,6 @@ function handleFormSubmit(e) {
 }
 
 function buildWishPage({ recipient, sender, message, date, giftEnabled }) {
-  // Show the section
   document.getElementById('create').style.display = 'none';
   const display = document.getElementById('wishDisplay');
   display.style.display = 'block';
