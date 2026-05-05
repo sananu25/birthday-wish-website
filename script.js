@@ -191,7 +191,6 @@ function buildWishPage({ recipient, sender, message, date, giftEnabled }) {
   display.style.display = 'block';
   display.scrollIntoView({ behavior: 'smooth' });
 
-  // Fill in details
   document.getElementById('displayName').textContent = recipient;
   document.getElementById('displayFrom').textContent = `From: ${sender} 💌`;
   document.getElementById('displayMessage').textContent = message;
