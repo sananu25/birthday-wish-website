@@ -195,7 +195,6 @@ function buildWishPage({ recipient, sender, message, date, giftEnabled }) {
   document.getElementById('displayFrom').textContent = `From: ${sender} 💌`;
   document.getElementById('displayMessage').textContent = message;
 
-  // Unique link
   const link = generateUniqueLink(recipient, sender);
   document.getElementById('generatedLink').value = link;
 
