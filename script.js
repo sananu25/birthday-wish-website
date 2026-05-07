@@ -253,7 +253,6 @@ function goBackToCreate() {
 function generateUniqueLink(recipient, sender) {
   const base = window.location.origin + window.location.pathname;
 
-  // Collect all current wish data
   const message  = document.getElementById('wishMessage').value.trim();
   const date     = document.getElementById('birthdayDate').value;
   const gift     = document.getElementById('giftReveal').checked ? '1' : '0';
