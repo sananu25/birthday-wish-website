@@ -607,7 +607,6 @@ section:first-of-type { padding-top: 0; }
 
 .btn-copy:hover { transform: scale(1.05); }
 
-/* Wish Hero */
 .wish-hero {
   background: linear-gradient(135deg, rgba(255,107,157,0.15), rgba(196,77,255,0.15), rgba(255,179,71,0.1));
   border: 1px solid rgba(255,107,157,0.3);
