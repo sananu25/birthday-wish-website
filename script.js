@@ -212,7 +212,6 @@ function buildWishPage({ recipient, sender, message, date, giftEnabled }) {
     document.getElementById('countdownBox').style.display = 'none';
   }
 
-  // Gallery
   if (state.photos.length > 0) {
     buildGallery();
     document.getElementById('gallerySection').style.display = 'block';
