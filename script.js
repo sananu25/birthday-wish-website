@@ -245,7 +245,6 @@ function goBackToCreate() {
   document.getElementById('wishDisplay').style.display = 'none';
   document.getElementById('create').style.display = 'block';
   document.getElementById('create').scrollIntoView({ behavior: 'smooth' });
-  // Clear countdown
   if (state.countdownInterval) clearInterval(state.countdownInterval);
 }
 
