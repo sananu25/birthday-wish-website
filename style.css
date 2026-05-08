@@ -711,7 +711,6 @@ section:first-of-type { padding-top: 0; }
 .cd-unit small { color: var(--text-muted); font-size: 0.75rem; font-weight: 700; margin-top: 0.3rem; }
 .cd-sep { font-size: 2rem; font-weight: 900; color: var(--pink); padding-bottom: 0.5rem; }
 
-/* Gift Box */
 .gift-box-section {
   text-align: center;
   padding: 2rem;
