@@ -384,7 +384,6 @@ function handlePhotoUpload(e) {
   });
 }
 
-// ── Video Upload ──────────────────────────────────────────────
 function handleVideoUpload(e) {
   const file = e.target.files[0];
   if (!file) return;
@@ -393,7 +392,6 @@ function handleVideoUpload(e) {
   preview.innerHTML = `<div style="margin-top:0.5rem;color:var(--green);font-weight:700;font-size:0.9rem;">✅ ${file.name}</div>`;
 }
 
-// ── Music Upload ──────────────────────────────────────────────
 function handleMusicUpload(e) {
   const file = e.target.files[0];
   if (!file) return;
