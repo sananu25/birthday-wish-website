@@ -256,7 +256,6 @@ function generateUniqueLink(recipient, sender) {
   const date     = document.getElementById('birthdayDate').value;
   const gift     = document.getElementById('giftReveal').checked ? '1' : '0';
 
-  // Pack into a JSON string and base64-encode so it survives in a URL param
   const payload  = JSON.stringify({ r: recipient, s: sender, m: message, d: date, g: gift });
   const encoded  = btoa(unescape(encodeURIComponent(payload)));
 
