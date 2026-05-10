@@ -669,7 +669,6 @@ section:first-of-type { padding-top: 0; }
 .wish-sparkles { font-size: 2rem; letter-spacing: 0.5rem; margin-top: 1rem; animation: sparkle-bounce 1s ease-in-out infinite alternate; }
 @keyframes sparkle-bounce { from { transform: translateY(0); } to { transform: translateY(-8px); } }
 
-/* Countdown */
 .countdown-box {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
