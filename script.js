@@ -227,7 +227,6 @@ function buildWishPage({ recipient, sender, message, date, giftEnabled }) {
     document.getElementById('videoSection').style.display = 'none';
   }
 
-  // Music
   if (state.musicFile) {
     const music = document.getElementById('wishMusic');
     music.src = URL.createObjectURL(state.musicFile);
