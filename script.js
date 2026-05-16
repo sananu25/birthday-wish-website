@@ -224,18 +224,16 @@ function buildWishPage({ recipient, sender, message, date, giftEnabled }) {
     video.src = URL.createObjectURL(state.videoFile);
     document.getElementById('videoSection').style.display = 'block';
   } else {
-    document.getElementById('videoSection').style.display = 'none';
+    document.getElementById('videoSection').style.display = 'none' ;
   }
 
-  if (state.musicFile) {
+  if  (state.musicFile) {
     const music = document.getElementById('wishMusic');
     music.src = URL.createObjectURL(state.musicFile);
     document.getElementById('musicPlayer').style.display = 'flex';
   } else {
     document.getElementById('musicPlayer').style.display = 'none';
   }
-
-  // Reset wishes list
   document.getElementById('wishMessagesList').innerHTML = '';
   state.wishList = [];
 }
@@ -247,7 +245,6 @@ function goBackToCreate() {
   if (state.countdownInterval) clearInterval(state.countdownInterval);
 }
 
-// ── Unique Link Generator ─────────────────────────────────────
 function generateUniqueLink(recipient, sender) {
   const base = window.location.origin + window.location.pathname;
 
