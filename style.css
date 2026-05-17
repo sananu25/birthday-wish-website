@@ -486,7 +486,7 @@ section:first-of-type { padding-top: 0; }
 .upload-placeholder p { color: var(--text-muted); font-size: 0.95rem; font-weight: 600; }
 .upload-placeholder small { color: rgba(255,255,255,0.35); font-size: 0.8rem; }
 
-/* Photo Preview Grid */
+
 .photo-preview-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
