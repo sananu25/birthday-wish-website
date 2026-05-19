@@ -284,7 +284,6 @@ function checkURLHash() {
     const date       = data.d || '';
     const giftEnabled = data.g === '1';
 
-    // Hide the create form, show the wish display directly
     document.getElementById('create').style.display = 'none';
 
     // Show a nice "you received a wish" overlay first, then reveal the page
