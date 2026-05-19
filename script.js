@@ -288,7 +288,6 @@ function checkURLHash() {
 
     showReceivedWishOverlay(recipient, sender, () => {
       buildWishPage({ recipient, sender, message, date, giftEnabled });
-      // Scroll to top of wish display
       document.getElementById('wishDisplay').scrollIntoView({ behavior: 'smooth' });
       // Hide the share banner – the recipient doesn't need the link
       const banner = document.querySelector('.share-banner');
