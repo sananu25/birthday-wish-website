@@ -286,7 +286,6 @@ function checkURLHash() {
 
     document.getElementById('create').style.display = 'none';
 
-    // Show a nice "you received a wish" overlay first, then reveal the page
     showReceivedWishOverlay(recipient, sender, () => {
       buildWishPage({ recipient, sender, message, date, giftEnabled });
       // Scroll to top of wish display
