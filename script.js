@@ -441,7 +441,6 @@ function goToSlide(index) {
   dots[state.galleryIndex].classList.add('active');
 }
 
-// ── Countdown Timer ───────────────────────────────────────────
 function startCountdown(dateStr) {
   if (state.countdownInterval) clearInterval(state.countdownInterval);
 
@@ -449,7 +448,6 @@ function startCountdown(dateStr) {
     const now = new Date();
     const target = new Date(dateStr);
     
-    // Set to current year if passed
     if (target < now) {
       target.setFullYear(now.getFullYear() + 1);
     }
@@ -502,7 +500,6 @@ function revealGift() {
   }, 500);
 }
 
-// ── Music Player ──────────────────────────────────────────────
 function toggleMusic() {
   const music = document.getElementById('wishMusic');
   const btn = document.getElementById('musicToggle');
