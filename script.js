@@ -291,7 +291,6 @@ function checkURLHash() {
       document.getElementById('wishDisplay').scrollIntoView({ behavior: 'smooth' });
       const banner = document.querySelector('.share-banner');
       if (banner) banner.style.display = 'none';
-      // Hide the "back" button
       const backBtn = document.querySelector('.btn-back');
       if (backBtn) backBtn.style.display = 'none';
     });
