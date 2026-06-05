@@ -513,7 +513,7 @@ function toggleMusic() {
   }
 }
 
-// ── Group Wish (on Wish Display Page) ─────────────────────────
+
 function addGroupWish() {
   const name = document.getElementById('commenterName').value.trim();
   const msg = document.getElementById('commenterMessage').value.trim();
