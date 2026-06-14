@@ -343,7 +343,7 @@ function showReceivedWishOverlay(recipient, sender, onReveal) {
   `;
 
   document.body.appendChild(overlay);
-  // Store callback globally so inline onclick can reach it
+
   window._onRevealWish = () => {
     onReveal();
     burstConfetti();
