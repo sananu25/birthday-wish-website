@@ -351,7 +351,6 @@ function showReceivedWishOverlay(recipient, sender, onReveal) {
   };
 }
 
-// ── Photo Upload ──────────────────────────────────────────────
 function handlePhotoUpload(e) {
   const files = Array.from(e.target.files);
   state.photos = [];
