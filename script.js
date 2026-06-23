@@ -27,6 +27,8 @@ function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
+
+
 function hamburgerMenu() {
   const btn = document.getElementById('hamburger');
   btn?.addEventListener('click', () => {
