@@ -715,6 +715,7 @@ section:first-of-type { padding-top: 0; }
   padding: 2rem;
 }
 
+
 .gift-box {
   display: inline-block;
   font-size: 6rem;
@@ -764,7 +765,6 @@ section:first-of-type { padding-top: 0; }
 
 .gift-hint { color: var(--text-muted); font-size: 0.9rem; font-weight: 600; margin-top: 0.5rem; }
 
-/* Wish Message Card */
 .wish-message-card {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
@@ -794,7 +794,7 @@ section:first-of-type { padding-top: 0; }
   padding: 1rem 2rem;
 }
 
-/* Gallery */
+
 .gallery-section {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
