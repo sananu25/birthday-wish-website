@@ -194,6 +194,7 @@ body::before {
   transition: opacity 0.3s;
 }
 
+
 .btn-primary:hover { transform: translateY(-3px); box-shadow: var(--glow-pink); }
 .btn-primary:hover::after { opacity: 1; }
 .btn-primary.large { padding: 1rem 2.5rem; font-size: 1.1rem; }
@@ -678,6 +679,7 @@ section:first-of-type { padding-top: 0; }
 }
 
 .countdown-box h3 { font-size: 1.3rem; margin-bottom: 1.5rem; }
+
 
 .countdown-timer {
   display: flex;
