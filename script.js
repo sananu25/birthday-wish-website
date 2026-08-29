@@ -392,7 +392,8 @@ function handleMusicUpload(e) {
   preview.innerHTML = `<div style="margin-top:0.5rem;color:var(--green);font-weight:700;font-size:0.9rem;">🎵 ${file.name}</div>`;
 }
 
-// ── Gallery ───────────────────────────────────────────────────
+
+
 function buildGallery() {
   const track = document.getElementById('galleryTrack');
   const dots = document.getElementById('galleryDots');
