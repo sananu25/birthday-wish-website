@@ -479,7 +479,6 @@ function startCountdown(dateStr) {
   state.countdownInterval = setInterval(tick, 1000);
 }
 
-// ── Gift Reveal ───────────────────────────────────────────────
 let giftOpened = false;
 
 function revealGift() {
